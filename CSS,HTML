@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-template</title>
+    <style>
+        .container {
+            margin: 50px auto;
+            background-color: rgb(1, 183, 244);
+            display: grid;
+            grid-template-columns: 200px 150px 200px;
+            grid-template-rows: auto auto auto;
+            grid-row-gap: 50px;
+            grid-column-gap: 50px;
+        }
+
+        .box {
+            border: 2px solid red;
+            background-color: pink;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #first {
+            /* grid-row-start: 1;
+            grid-row-end: span 2; */
+            grid-column: 1/ span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="first">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+</body>
+
+</html>
